@@ -1,0 +1,231 @@
+body
+{
+	background: #3399CC;
+}
+.form-control
+{
+	margin: 0 auto;
+	display: flex;
+	margin-top: 20px;
+	width: 70%;
+}
+#form-control1
+{
+	margin-top: 50px;
+}
+.logo {
+  width: 100%;
+  height: 120px;
+/*  margin-left: 150px;
+  margin-top: 22px;
+  margin-right: -14px;
+  margin-bottom: 0;*/
+  cursor: pointer;
+  /*魔方*/
+  /*float: left;*/
+  margin:0 auto;
+}
+
+.logo .scene {
+  margin:0 auto;
+  width: 60px;
+  height: 60px;
+  perspective: 240px;
+  transition: 2s;
+  margin-top: 40px;
+  /*float: left;*/
+}
+.logo .scene .cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 2s all;
+  animation: spinner 10s infinite linear;
+}
+.logo .scene .cube .cube-face {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transition: 2s;
+  /*box-shadow: 0px 0px 130px #ebd7c9;*/
+  background-repeat: no-repeat;
+  background-color: #fff;
+  opacity: 0.7;
+  line-height: 60px;
+  color: #0066CC;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  /*border:1px solid #111;*/
+  font-weight: 800;
+}
+.logo .scene .cube .inner-faces {
+  /*background: url("../imgs/index-stat/index-stat.gif");*/
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  box-shadow: 0px 0px 0px #fff;
+}
+.logo .scene .cube .inner-face {
+  transform: translate3d(0, 0, 0px);
+}
+.logo .scene .cube .inner-face2 {
+  transform: rotateY(90deg) translate3d(0, 0, 0px);
+}
+.logo .scene .cube .inner-face3 {
+  transform: rotateX(90deg) translate3d(0, 0, 0px);
+}
+.logo .scene .cube .front {
+  transform: translate3d(0, 0, 30px);
+  transition: 2s;
+}
+.logo .scene .cube .back {
+  transform: rotateY(180deg) translate3d(0, 0, 30px);
+}
+.logo .scene .cube .left {
+  transform: rotateY(-90deg) translate3d(0, 0, 30px);
+}
+.logo .scene .cube .right {
+  transform: rotateY(90deg) translate3d(0, 0, 30px);
+}
+.logo .scene .cube .top {
+  transform: rotateX(90deg) translate3d(0, 0, 30px);
+}
+.logo .scene .cube .bottom {
+  transform: rotateX(-90deg) translate3d(0, 0, 30px);
+}
+@keyframes spinner {
+  from {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: rotateY(359deg) rotateX(359deg);
+  }
+}
+
+.form-news
+{
+	margin-top: 40px;
+	width: 100%;
+	height:50px;
+	text-align: center;
+	color:#fff;
+	font-size: 18px;
+}
+.form-btn
+{
+	width: 320px;
+	height:60px;
+	margin:0 auto;
+}
+.form-btn-1
+{
+	display: inline-block;
+	width: 100px;
+	height:50px;
+	background: #fff;
+	border-radius: 10px;
+	text-align: right;
+	line-height:50px;
+	color:#3399cc;
+	font-size: 18px;
+	padding-right: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.active
+{
+	display: inline-block;
+	width: 100px;
+	height:50px;
+	background: #fff;
+	border-radius: 10px;
+	text-align: center;
+	line-height:50px;
+	/*color:#3399cc;*/
+	font-size: 18px;
+	/*padding-right: 10px;*/
+	position: relative;
+	cursor: pointer;
+	border:2px solid green;
+	color:green;
+	box-sizing: border-box;
+}
+.active2
+{
+	display: inline-block;
+	width: 100px;
+	height:50px;
+	background: #fff;
+	border-radius: 10px;
+	border:2px solid red;
+	/*color:green;*/
+	box-sizing: border-box;
+	text-align: center;
+	line-height:50px;
+	color:red;
+	font-size: 18px;
+	/*padding-right: 10px;*/
+	position: relative;
+	cursor: pointer;
+	margin-left: 100px;
+}
+.form-btn-1:after
+{
+	content: "";
+	display: block;
+	width: 24px;
+	height:24px;
+	background: url(../images/good.png);
+	position: absolute;
+	top: 12px;
+	left: 15px;
+}
+.form-btn-2
+{
+	display: inline-block;
+	width: 100px;
+	height:50px;
+	background: #fff;
+	border-radius: 10px;
+	text-align: right;
+	line-height:50px;
+	color:#3399cc;
+	font-size: 18px;
+	padding-right: 10px;
+	position: relative;
+	cursor: pointer;
+	margin-left: 100px;
+}
+.form-btn-2:after
+{
+	content: "";
+	display: block;
+	width: 24px;
+	height:24px;
+	background: url(../images/bad.png);
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+.form-sub
+{
+	width: 100%;
+	height:auto;
+	magrin:0 auto;
+	/*position: relative;*/
+}
+.form-sub button
+{
+	display: block;
+	width: 150px;
+	height:40px;
+	margin:0 auto;
+	margin-top: 30px;
+	border:none;
+	background: #3399cc;
+	color:#fff;
+	border:2px solid #fff;
+	outline: none;
+}
